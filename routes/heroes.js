@@ -5,6 +5,6 @@ const heroesController = require('../controllers/heroesController')
 
 router.get('/', heroesController.listar);
 router.get('/detalle/:idHeroe', heroesController.detalle);
-router.get('/bio/:idHereo/ok?');
+router.get('/bio/:idHereo/ok?', heroesController.bio);
 
 module.exports = router;

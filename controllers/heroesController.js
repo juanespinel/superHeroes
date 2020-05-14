@@ -28,14 +28,16 @@ const heroesController = {
             }
         }
         res.end(`No tenemos un heroe con ese ID`);
-    }
-    
-    /*
+    },
     bio: function (req, res) {
-
-    }
-    */
-
+        for(let i = 0; i < heroes.length; i++) {
+            if(heroes[i].id == req.params.idHeroe) {
+                res.write('PROBANDO SECCION BIO IF');
+                res.end();
+            }
+        }
+        res.end('PROBANDO SECCION BIO ELSE');
+    },
 };
 
 module.exports = heroesController;
