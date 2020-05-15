@@ -3,6 +3,6 @@ const router = express.Router();
 
 const creditosController = require('../controllers/creditosController')
 
-router.get('/', creditosController);
+router.get('/', creditosController.mostrar);
 
 module.exports = router;
