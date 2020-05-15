@@ -5,7 +5,7 @@ const creditosController = {
         res.writeHead(200, HEADER_CHARTSET);
         res.write('ESTOS SON LOS CREDITOS');
         res.write('\n\n');
-        res.write('**JUAN ESPINEL**');
+        res.write('**JUAN ESPINEL😎**');
         res.write('\n\n');
         res.write('**cuarentialCoders**');
         res.end();
